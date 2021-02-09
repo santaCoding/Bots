@@ -15,9 +15,8 @@ def start_message(message):
 
 @bot.message_handler(content_types = ['text'])
 def main(message):
-    pass
-
-
+    if message.text.lower() == 'секрет':
+        bot.send_photo(message.chat.id, photo=open('photka.jpg', 'rb'))
 
 
 bot.polling()
