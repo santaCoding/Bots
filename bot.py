@@ -2,7 +2,7 @@ import telebot
 from time import sleep
 import requests
 
-bot = telebot.TeleBot('1605119011:AAE9zcqfBZd5qqFh2d0y5tVXejgpMjjjx3U')
+bot = telebot.TeleBot('')
 keyboard1 = telebot.types.ReplyKeyboardMarkup(True)
 keyboard1.row('Show Alex\'s portfolio', 'Show contacts', 'How do I work?')
 @bot.message_handler(commands=['start'])
